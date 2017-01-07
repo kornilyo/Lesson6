@@ -1,0 +1,78 @@
+/* CSS Normalize */
+@import 'reset.css';
+
+
+/* Box-sizing border-box */
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+
+/* Some default styles to make each box visible */
+.box {
+  color:white;
+  font-size: 100px;
+  text-align: center;
+  text-shadow:4px 4px 0 rgba(0,0,0,0.1);
+  padding:10px;
+}
+
+/* Colours for each box */
+.box1 { background:#3498db;font-size:14px;}
+.box2 { background:#3498db;font-size:14px;}
+.box3 { background:#e67e22;font-size:14px;}
+.box4 { background:#2ecc71;font-size:14px;}
+.box5 { background:#2ecc71;font-size:14px;}
+.box6 { background:#2ecc71;font-size:14px;}
+.box7 { background:#e74c3c;font-size:14px;}
+.box8 { background:#e74c3c;font-size:14px;}
+.box9 { background:#e74c3c;font-size:14px;}
+.box10 { background:#e74c3c;font-size:14px;}
+
+
+/* Flexbox code starts here */
+.container {
+    /* height:100vh; */
+    border: 1rem solid ange;
+    flex-direction:row;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:baseline;
+    justify-content:space-between;
+    padding: 5px
+    
+}
+.box{
+    margin:0.2rem;
+    height:100px;
+    width:100vw; 
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:8px;
+}
+.blue { 
+}
+
+.orange {
+    height:200px;
+}
+
+.green {   
+}
+
+.red {  
+}
+
+.expendable {
+    display:none;
+}
+@media screen and (min-width: 480px) {
+.red {
+        flex-basis:calc(50% - 7px);
+        display:flex;
+        margin: 
+}
+
