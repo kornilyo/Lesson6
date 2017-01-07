@@ -13,66 +13,83 @@
 /* Some default styles to make each box visible */
 .box {
   color:white;
-  font-size: 100px;
+  font-size: 1rem;
   text-align: center;
-  text-shadow:4px 4px 0 rgba(0,0,0,0.1);
+  text-shadow:2px 2px 0 rgba(0,0,0,0.1);
   padding:10px;
 }
 
 /* Colours for each box */
-.box1 { background:#3498db;font-size:14px;}
-.box2 { background:#3498db;font-size:14px;}
-.box3 { background:#e67e22;font-size:14px;}
-.box4 { background:#2ecc71;font-size:14px;}
-.box5 { background:#2ecc71;font-size:14px;}
-.box6 { background:#2ecc71;font-size:14px;}
-.box7 { background:#e74c3c;font-size:14px;}
-.box8 { background:#e74c3c;font-size:14px;}
-.box9 { background:#e74c3c;font-size:14px;}
-.box10 { background:#e74c3c;font-size:14px;}
+.box1 { background:#3498db;}
+.box2 { background:#3498db;}
+.box3 { background:#e67e22;}
+.box4 { background:#2ecc71;}
+.box5 { background:#2ecc71;}
+.box6 { background:#2ecc71;}
+.box7 { background:#e74c3c;}
+.box8 { background:#e74c3c;}
+.box9 { background:#e74c3c;}
+.box10 { background:#e74c3c;}
 
 
 /* Flexbox code starts here */
 .container {
-    /* height:100vh; */
-    border: 1rem solid ange;
-    flex-direction:row;
-    display:flex;
-    flex-wrap:wrap;
-    align-items:baseline;
-    justify-content:space-between;
-    padding: 5px
-    
+display:flex;
+flex-wrap: wrap;
+  
 }
+
 .box{
-    margin:0.2rem;
-    height:100px;
-    width:100vw; 
+    width: 100vw;
+    margin: 5px;
+    border-radius: 5px;
     display: flex;
-    justify-content:center;
-    align-items:center;
-    border-radius:8px;
-}
-.blue { 
-}
-
-.orange {
-    height:200px;
-}
-
-.green {   
-}
-
-.red {  
-}
-
-.expendable {
+    align-items: center;
+    justify-content: center;
+   }
+.dispose {
     display:none;
 }
-@media screen and (min-width: 480px) {
-.red {
-        flex-basis:calc(50% - 7px);
-        display:flex;
-        margin: 
+.ooo {
+    height: 5rem;
+    
+    
 }
-
+/*midsize starts here*/
+@media only screen 
+  and (min-width: 320px) {
+    .foot {
+        flex-basis:calc(50% - 10px);
+    }
+        
+    .dispose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+      .foot {
+          height: 3rem;
+      }
+    
+}
+/*desktop starts here*/
+@media only screen 
+  and (min-width:480px) {
+    .foot {
+        flex-basis:calc(25% - 10px);
+        height: 6rem;
+        }
+      
+    .gridmain {
+        flex-basis:calc(33% - 10px);
+        height: 8rem;
+    }
+      .bbb {
+        flex-basis:calc(50% - 10px);
+          height: 4rem;
+    }
+      .ooo {
+          height: 10rem;
+      }
+    
+}
